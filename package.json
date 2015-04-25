@@ -19,6 +19,7 @@
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.2.0",
     "hubot-tg": "git://github.com/zenitram/hubot-tg",
+    "hubot-trollbot": "^0.1.1",
     "hubot-youtube": "^0.1.2"
   },
   "engines": {
