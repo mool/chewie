@@ -2,7 +2,7 @@
   "hubot-9gag",
   "hubot-diagnostics",
   "hubot-help",
-  "hubot-factoids",
+  "hubot-factoid",
   "hubot-google-images",
   "hubot-google-translate",
   "hubot-maps",
@@ -12,5 +12,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-trollbot",
+  "hubot-voting",
   "hubot-youtube"
 ]

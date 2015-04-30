@@ -9,6 +9,7 @@
     "hubot": "^2.12.0",
     "hubot-9gag": "^0.2.0",
     "hubot-diagnostics": "0.0.1",
+    "hubot-factoid": "0.0.1",
     "hubot-factoids": "^0.2.6",
     "hubot-google-images": "^0.1.4",
     "hubot-google-translate": "^0.1.0",
@@ -22,6 +23,7 @@
     "hubot-shipit": "^0.2.0",
     "hubot-tg": "git://github.com/zenitram/hubot-tg",
     "hubot-trollbot": "^0.1.1",
+    "hubot-voting": "^1.0.0",
     "hubot-youtube": "^0.1.2",
     "soupselect": "^0.2.0"
   },
