@@ -37,7 +37,7 @@ send_meme = (message, location, response_handler)->
       location = response.headers['location']
       return send_meme( message, location, response_handler )
 
-    img_src = get_comic( body, 'img[src^="http://www.explosm.net/db/files/Comics"]')
+    img_src = get_comic( body, 'img[src^="//files.explosm.net/"]')
 
     if img_src.substr(0, 4) != 'http'
       img_src = "http:#{img_src}"
