@@ -26,7 +26,7 @@ module.exports = (robot)->
       message.send url, title
 
 send_meme = (message, location, response_handler)->
-  meme_domain = 'http://www.commitstrip.com'
+  meme_domain = 'http://www.commitstrip.com/en'
   location  ||= '/?random=1'
   if location.substr(0, 4) != 'http'
     url = meme_domain + location
@@ -36,7 +36,7 @@ send_meme = (message, location, response_handler)->
   message.http( url ).get() (error, response, body)->
     return response_handler 'Sorry, something went wrong' if error
 
-    if response.statusCode == 302
+    if response.statusCode in [302, 307]
       location = response.headers['location']
       return send_meme( message, location, response_handler )
 
@@ -59,4 +59,4 @@ get_comic = (body, selector)->
   select_element(body, selector).attribs.src
 
 get_title = (body, selector)->
-  select_element(body, selector).text()
+  select_element(body, selector).children[0].raw
